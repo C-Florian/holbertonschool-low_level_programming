@@ -1,14 +1,23 @@
-#include <stdio.h>
+Include <stdio.h>
 
 /**
- * main - Entry point of the program
+ * main - Point d'entrée du programme
  *
- * Description: Print "With proper grammar, but the outcome is a piece of art,"
- * using the printf fonction.
- *
- * Return: Always 0 (sucess)
+ * Return: Toujours 0 (Succès)
  */
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,\n");
-	return (0);
+    printf("with proper grammar, but the outcome is a piece of art,\n");
+    return (0);
+}
+
+
+
+
+
+
+
+
+
+
+
