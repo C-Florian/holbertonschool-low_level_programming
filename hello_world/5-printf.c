@@ -1,15 +1,14 @@
-#include <stdio.h>  // Inclusion de la bibliothèque standard pour utiliser printf
+#include <stdio.h>
 
 /**
- * main - Point d'entrée du programme
+ * main - Entry point of the program
  *
- * Description : Ce programme affiche une phrase en utilisant printf.
- * Il ne doit pas utiliser la fonction puts et doit retourner 0 à la fin.
+ * Description: Print "With proper grammar, but the outcome is a piece of art,"
+ * using the printf fonction.
  *
- * Return: 0 si l'exécution est réussie
+ * Return: Always 0 (sucess)
  */
 int main(void)
 {
-    printf("with proper grammar, but the outcome is a piece of art,\n");
-    return (0);  // Indique que le programme s'est terminé avec succès
-}
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
