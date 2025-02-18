@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints the alphabet in lowercase, then in uppercase,
+ * main - Prints the alphabet in lowercase except 'q' and 'e',
  * followed by a new line
  *
  * Return: Always 0 (Success)
@@ -10,13 +10,10 @@ int main(void)
 {
 	char letter;
 
-	/* Print lowercase alphabet */
+	/* Print lowercase alphabet except 'q' and 'e' */
 	for (letter = 'a'; letter <= 'z'; letter++)
-		putchar(letter);
-
-	/* Print uppercase alphabet */
-	for (letter = 'A'; letter <= 'Z'; letter++)
-		putchar(letter);
+		if (letter != 'q' && letter != 'e')
+			putchar(letter);
 
 	/* Print new line */
 	putchar('\n');
