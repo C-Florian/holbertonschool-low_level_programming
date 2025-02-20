@@ -1,7 +1,7 @@
-#ifndef MAIN_H  // Vérifie si MAIN_H n'est pas déjà défini
-#define MAIN_H  // Définit MAIN_H pour éviter les inclusions multiples
+#ifndef MAIN_H
+#define MAIN_H
 
-int _putchar(char c); // Déclaration de la fonction _putchar
+int _putchar(char c);
 
-#endif /* MAIN_H */  // Fin de la condition préprocesseur
+#endif /* MAIN_H */
 
