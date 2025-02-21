@@ -8,9 +8,24 @@
  */
 int _islower(int c)
 {
-    if (c >= 'a' && c <= 'z') // Vérifie si c est entre 'a' et 'z'
+    if (c >= 'a' && c <= 'z') /* Vérifie si c est entre 'a' et 'z' */
         return (1);
     else
         return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
