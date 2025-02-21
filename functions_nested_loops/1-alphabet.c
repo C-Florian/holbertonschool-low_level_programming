@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * print_alphabet - Affiche l'alphabet en minuscule suivi d'un saut de ligne
+ * print_alphabet - prints alphabet
+ *
  */
 void print_alphabet(void)
 {
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyz\n"; // Alphabet avec saut de ligne
-	int i = 0;
+	char letter = 'a';
 
-	// Affichage avec _putchar (seule solution pour respecter la contrainte de 2 utilisations)
-	while (alphabet[i] != '\0')
+	while (letter <= 'z')
 	{
-		_putchar(alphabet[i]);
-		i++;
+		_putchar(letter);
+		letter++;
 	}
-}
 
+	_putchar('\n');
+}
