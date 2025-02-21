@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- * main - Point d'entrée du programme
+ * main - check the code
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    print_alphabet(); /* Appel de la fonction */
+    print_alphabet();
     return (0);
 }
-
