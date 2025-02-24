@@ -6,19 +6,21 @@
  */
 void print_diagonal(int n)
 {
-	if (n <= 0)
-	{
-		_putchar('\n');
-		return;
-	}
+    int i, j;
 
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = 0; j < i; j++)
-		{
-			_putchar(' ');  /* Print spaces */
-		}
-		_putchar('\\');  /* Print the diagonal */
-		_putchar('\n');  /* Move to the next line */
-	}
+    if (n <= 0)
+    {
+        _putchar('\n');
+        return;
+    }
+
+    for (i = 0; i < n; i++)
+    {
+        for (j = 0; j < i; j++)
+        {
+            _putchar(' ');  /* Print spaces */
+        }
+        _putchar('\\');  /* Print the diagonal */
+        _putchar('\n');  /* Move to the next line */
+    }
 }
