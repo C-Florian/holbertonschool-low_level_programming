@@ -9,12 +9,10 @@ void puts2(char *str)
 {
 	int i;
 
-	i = 0;
-	while (str[i] != '\0') /* Loop until end of string */
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		_putchar(str[i]);
-		i += 2; /* Move to the next alternate character */
+		if (i % 2 == 0) /* Print only characters at even indices */
+			_putchar(str[i]);
 	}
 	_putchar('\n'); /* Print newline at the end */
 }
-
