@@ -10,27 +10,22 @@
 int _atoi(char *s)
 {
 	int sign = 1, num = 0, found_digit = 0;
-	int prev_num;
 
 	while (*s)
 	{
 		if (*s == '-')
 			sign *= -1;
-		else if (*s == '+')
-			sign *= 1;
 		else if (*s >= '0' && *s <= '9')
 		{
-			prev_num = num;
-			num = num * 10 + (*s - '0');
-
-			/* Vérifier dépassement de INT_MAX */
-			if (num / 10 != prev_num)
+			/* Vérifier si la prochaine opération causera un overflow */
+			if (num > (INT_MAX / 10) || (num == INT_MAX / 10 && (*s - '0') > INT_MAX % 10))
 			{
 				if (sign == 1)
 					return (INT_MAX);
 				else
 					return (INT_MIN);
 			}
+			num = num * 10 + (*s - '0');
 			found_digit = 1;
 		}
 		else if (found_digit)
