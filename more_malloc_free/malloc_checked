@@ -1,0 +1,14 @@
+#include "main.h"
+#include <stdio.h>
+
+int main(void)
+{
+    int *ptr;
+
+    ptr = malloc_checked(sizeof(int) * 10);
+    if (ptr)
+        printf("Mémoire allouée avec succès : %p\n", (void *)ptr);
+
+    free(ptr);
+    return (0);
+}
