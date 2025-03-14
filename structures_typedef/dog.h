@@ -3,15 +3,15 @@
 
 /**
  * struct dog - Structure représentant un chien
- * @name: Nom du chien (chaîne de caractères)
- * @age: Âge du chien (nombre flottant)
- * @owner: Propriétaire du chien (chaîne de caractères)
+ * @name: Nom du chien
+ * @age: Âge du chien
+ * @owner: Propriétaire du chien
  */
 struct dog
 {
-    char *name;
-    float age;
-    char *owner;
+	char *name;
+	float age;
+	char *owner;
 };
 
 #endif /* DOG_H */
